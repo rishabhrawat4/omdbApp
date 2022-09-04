@@ -43,7 +43,7 @@ export const onSearchSuccess = (state, { response }) => {
 export const onSearchFailure = (state, { error }) => {
   return state.merge({
     loading: false,
-    error: true,
+    error: error,
   });
 }
 
